@@ -32,14 +32,16 @@ lbl_title1.place(x=25, y=55)
 lbl_visitors1 = tk.Label(text="Посетители", font=('Helvetica', 10, 'bold')) 
 lbl_visitors1.place(x=25, y=85)
 
-ent_visitors1 = tk.Entry(font=('Helvetica', 10, 'bold')) 
+ent_visitors1 = tk.Entry(font=('Helvetica', 10, 'bold'), justify='center') #justify='center' выравнивание по центру
 ent_visitors1.place(x=115, y=85, width=90, height=20)
+ent_visitors1.insert(tk.END, "0") #вставка 0 в поле ввода
 
 lbl_conversions1 = tk.Label(text="Конверсии", font=('Helvetica', 10, 'bold')) 
 lbl_conversions1.place(x=25, y=115)
 
-ent_conversions1 = tk.Entry(font=('Helvetica', 10, 'bold')) 
+ent_conversions1 = tk.Entry(font=('Helvetica', 10, 'bold'), justify='center') 
 ent_conversions1.place(x=115, y=115, width=90, height=20)
+ent_conversions1.insert(tk.END, "0")
 
 # Добавление метки заголовка тестовой группы
 lbl_title2 = tk.Label(text="Тестовая группа", font=('Helvetica', 12, 'bold'), fg='#008800') #fg-цвет текста
@@ -49,14 +51,16 @@ lbl_title2.place(x=25, y=145)
 lbl_visitors2 = tk.Label(text="Посетители", font=('Helvetica', 10, 'bold')) 
 lbl_visitors2.place(x=25, y=175)
 
-ent_visitors2 = tk.Entry(font=('Helvetica', 10, 'bold')) 
+ent_visitors2 = tk.Entry(font=('Helvetica', 10, 'bold'), justify='center') 
 ent_visitors2.place(x=115, y=175, width=90, height=20)
+ent_visitors2.insert(tk.END, "0")
 
 lbl_conversions2 = tk.Label(text="Конверсии", font=('Helvetica', 10, 'bold')) 
 lbl_conversions2.place(x=25, y=205)
 
-ent_conversions2 = tk.Entry(font=('Helvetica', 10, 'bold')) 
+ent_conversions2 = tk.Entry(font=('Helvetica', 10, 'bold'), justify='center') 
 ent_conversions2.place(x=115, y=205, width=90, height=20)
+ent_conversions2.insert(tk.END, "0")
 
 # Добавление кнопки "Рассчитать"
 btn_process = tk.Button(root, text="Рассчитать", font = ('Helvetica', 10, 'bold'), command=popup_window)
